@@ -10,10 +10,10 @@ export default function HeaderBar() {
           <h1>MeuSite</h1>
         </Link>
         <div>
-          <NavLink className={({isActive}) => isActive ? "menu-item menu-active" : "menu-item"} to="/">
+          <NavLink className={({isActive}) => isActive ? "menu-item menu-active" : "menu-item"} to="/home">
             <span>Início</span>
           </NavLink>
-          <NavLink className={({isActive}) => isActive ? "menu-item menu-active" : "menu-item"}  to="/promotion">
+          <NavLink className={({isActive}) => isActive ? "menu-item menu-active" : "menu-item"}  to="promotion">
             <span>Promoção</span>
           </NavLink>
           <NavLink className={({isActive}) => isActive ? "menu-item menu-active" : "menu-item"}  to="/inscription">

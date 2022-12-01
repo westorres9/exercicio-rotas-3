@@ -8,7 +8,7 @@ export default function HomeBody() {
       </div>
 
       <div className="btn-container">
-        <Link to="promotion">
+        <Link to="/promotion">
           <button>Ver Promoção</button>
         </Link>
       </div>

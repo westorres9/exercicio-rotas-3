@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 import './App.css'
-import HeaderBar from './components/HeaderBar'
 import HomeBody from './components/HeaderBar/HomeBody'
 import Home from './routes/Home'
 import Inscription from './routes/Inscription'
@@ -13,7 +12,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home/>}>
-          <Route index element={<HomeBody/>}/>
+          <Route index element={<Navigate to="/home"/>}/>
+          <Route path="home" element={<HomeBody/>}/>
           <Route path="promotion" element={<Promotion/>}/>
           <Route path="inscription" element={<Inscription/>}/>
         </Route>
