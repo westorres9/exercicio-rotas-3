@@ -1,0 +1,44 @@
+:root {
+    --bg-red: #FF2323;
+    --bg-gray-light: #e1e1e1;
+    --color-font-gray: #6f6f6f;
+}
+
+.home-container {
+    background: var(--bg-gray-light);
+    height: 658px;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-card {
+    background-color: #FFF;
+    width: 100%;
+    height: 200px;
+    max-width: 960px;
+    margin: 30px auto;
+    border-radius: 6px;
+}
+
+.home-card h1 {
+    color: var(--color-font-gray);
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 20px;
+}
+
+.btn-container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.btn-container button {
+    background-color: var(--bg-red);
+    color: #FFF;
+    font-family: 'Inter';
+    font-weight: bold;
+    height:45px;
+    width: 130px;
+    border-radius: 6px;
+}
